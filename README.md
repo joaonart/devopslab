@@ -1,2 +1,2 @@
-# devopslab5ASO
+# devopslab
 MBA FIAP - Lab Devops &amp; Cloud
