@@ -15,7 +15,7 @@ deploy:
   on:
     branch: master
 - provider: gae
-  keyfile: "../devopslab-320323-1b8c1ebd8850.json"
+  keyfile: "~/devopslab-320323-1b8c1ebd8850.json"
   project: devopslab-320323
   on:
     branch: master
