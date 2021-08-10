@@ -20,6 +20,4 @@ deploy:
   on:
     branch: master
 before_install:
-- openssl aes-256-cbc -K $encrypted_13ecc076868e_key -iv $encrypted_13ecc076868e_iv
-  -in devopslab-320323-1b8c1ebd8850.json.enc -out ~/devopslab-320323-1b8c1ebd8850.json
-  -d
+- openssl aes-256-cbc -K $encrypted_13ecc076868e_key -iv $encrypted_13ecc076868e_iv -in devopslab-320323-1b8c1ebd8850.json.enc -out ~/devopslab-320323-1b8c1ebd8850.json -d
