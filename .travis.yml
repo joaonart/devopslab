@@ -44,7 +44,7 @@ jobs:
 
     - stage: STG TEST
       script:
-        - curl https://devopslab-joaonart.herokuapp.com/ | grep Laboratório || travis_terminate 1;
+        - curl https://devopslab-joaonart.herokuapp.com/ | grep Laboratorio || travis_terminate 1;
 
     - stage: PROD Deploy
       script: skip
@@ -58,5 +58,6 @@ jobs:
 
     - stage: PROD TEST
       script:
-        - curl https://devopslab-320323.uc.r.appspot.com/ | grep Laboratório || travis_terminate 1;
+        - curl https://devopslab-320323.uc.r.appspot.com/ | grep Laboratorio || travis_terminate 1;
+          
 
