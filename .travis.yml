@@ -24,7 +24,8 @@ jobs:
         sonarcloud:
           organization: joaonart
           token: ${SONAR_TOKEN}
-      script:  # Defini o script de Teste que deve rodar toda vez que o código for alterado.
+      # Defini o script de Teste que deve rodar toda vez que o código for alterado.
+      script:
         - coverage run test.py || travis_terminate 1;
         - coverage report app.py || travis_terminate 1;
         - coverage xml app.py || travis_terminate 1;
